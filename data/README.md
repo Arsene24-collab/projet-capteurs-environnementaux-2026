@@ -1,18 +1,38 @@
 # Projet Capteurs Environnementaux 2026
 
-Ce projet simule des capteurs environnementaux (Température, Humidité, Pression), génère des mesures aléatoires et les exporte dans un fichier CSV.
+Cette partie du projet simule des capteurs environnementaux (Température, Humidité, Pression), génère des mesures aléatoires et les exporte dans un fichier CSV.
+Elle constitue le module de génération des données du projet collaboratif.
 
-## 📁 Structure du projet
+##  Structure du projet
+
+Arsene/
+├── interfaces/
+│    └── CapteurInterface.java
+├── model/
+│    ├── Capteur.java
+│    ├── CapteurTemperature.java
+│    ├── CapteurHumidite.java
+│    └── CapteurPression.java
+├── utils/
+│    ├── GenerateurDonnees.java
+│    └── ExportCSV.java
+└── main/
+└── Main.java
 
 
-## 🎯 Objectifs
+##  Objectifs
 
 - Simuler des capteurs environnementaux
+
 - Générer des mesures réalistes
+
 - Exporter les données dans un fichier CSV
+
 - Structurer un projet Java propre et modulaire
 
-## 🧩 Fonctionnement des capteurs
+- Respecter les principes SRP et OCP du SOLID
+
+##  Fonctionnement des capteurs
 
 Chaque capteur :
 - possède un nom
@@ -24,7 +44,7 @@ Chaque capteur :
 - Humidité (%)
 - Pression (hPa)
 
-## 🔧 Génération des données
+##  Génération des données
 
 La classe `GenerateurDonnees` :
 - instancie les capteurs
@@ -32,7 +52,7 @@ La classe `GenerateurDonnees` :
 - ajoute un timestamp
 - retourne une liste de lignes prêtes pour l’export CSV
 
-## 📤 Export CSV
+##  Export CSV
 
 La classe `ExportCSV` :
 - crée un fichier CSV
@@ -40,15 +60,16 @@ La classe `ExportCSV` :
 - ajoute toutes les mesures générées
 - gère les erreurs d’écriture
 
-## ▶️ Exécution
+##  Exécution
 
 Lancer la classe `Main` :
 
 ```java
 List<String[]> donnees = GenerateurDonnees.generer(10);
 ExportCSV.exporter("data/mesures.csv", donnees);
+```
 
-Résultat dans la console 
+## Résultat dans la console 
 Export CSV réussi : data/mesures.csv
 Programme terminé.
 
