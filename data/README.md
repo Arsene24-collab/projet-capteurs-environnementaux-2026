@@ -69,7 +69,7 @@ List<String[]> donnees = GenerateurDonnees.generer(10);
 ExportCSV.exporter("data/mesures.csv", donnees);
 ```
 
-## Résultat dans la console 
+ Résultat dans la console 
 Export CSV réussi : data/mesures.csv
 Programme terminé.
 
