@@ -1,0 +1,53 @@
+Contributions au projet Capteurs Environnementaux 2026
+
+Arsene :
+- Conception de la structure initiale du projet Java (organisation des packages, arborescence du code)
+- Développement complet du module de génération des données :
+    - Création des capteurs (Température, Humidité, Pression)
+    - Génération de mesures réalistes avec timestamp
+    - Gestion des unités et valeurs
+    - Production du fichier CSV dans data/mesures.csv
+- Développement des utilitaires de génération et d’export (GenerateurDonnees, ExportCSV)
+- Mise en place du dossier data/ et gestion des fichiers (mesures.csv, README.md, contributions.txt)
+- Rédaction du README technique détaillé (structure du projet, fonctionnement, exécution)
+- Gestion Git du projet :
+    - Création du dépôt
+    - Ajout des fichiers non suivis
+    - Résolution des conflits
+    - Merge propre et synchronisation du dépôt
+    - Commit et push des mises à jour
+- Vérification de l’intégrité du projet et support technique pour la collaboration
+    - Vérification du bon fonctionnement des classes
+    - Analyse des résultats générés
+    - Ajustements et corrections
+
+
+ketsiagraceb :
+- Développement du module d'analyse des données dans le dossier ketsiagraceb/
+- Conception et implémentation des classes d'exceptions personnalisées :
+    - Gestion des erreurs liées aux mesures
+    - Validation des données
+    - Exceptions pour les valeurs incohérentes ou hors limites
+- Création des modèles d'analyse (model/) :
+    - Traitement des mesures
+    - Calculs statistiques
+    - Extraction des informations pertinentes
+- Développement des utilitaires d'analyse (utils/) :
+    - Fonctions de support pour l'analyse
+    - Méthodes de transformation et filtrage des données
+- Rédaction du rapport d'analyse dans data/rapport_analyse.txt :
+    - Présentation des résultats
+    - Interprétation des données
+    - Conclusion et recommandations
+- Développement de MainAnalyse.java :
+    - Point d’entrée du module d’analyse
+    - Exécution des traitements
+    - Affichage des résultats
+- Tests et validation :
+    - Vérification du bon fonctionnement des classes
+    - Analyse des résultats générés
+    - Ajustements et corrections
+
+
+
+
